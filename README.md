@@ -79,6 +79,20 @@ This approach was chosen to leverage Laravel's features for rapid development, m
     * Open your web browser and navigate to `http://127.0.0.1:8000`.
 
 
+## Usage
+
+Before you can play the word puzzle game, you need to:
+
+* [Log in](http://127.0.0.1:8000/login) if you have an existing account.
+* [Register](http://127.0.0.1:8000/register) for a new account if you don't have one.
+
+**Word Generation and Validation:**
+
+The words used in the puzzles are generated and stored in the `words.json` file. This file contains the pool of words from which the game selects possible solutions.
+
+**Important:** To validate the words used in a specific puzzle, you can check the `possible_words` column in the `puzzles` table of your database. This column contains an array of the correct words for each generated puzzle.
+
+
 ## Testing
 
 To run the tests:
@@ -86,10 +100,3 @@ To run the tests:
 ```bash
 php artisan test
 
-
-## Usage
-
-Before you can play the word puzzle game, you need to:
-
-* [Log in](http://127.0.0.1:8000/login) if you have an existing account.
-* [Register](http://127.0.0.1:8000/register) for a new account if you don't have one.
