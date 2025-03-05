@@ -13,7 +13,7 @@ use Mockery;
 
 class PuzzleServiceTest extends TestCase
 {
-    use RefreshDatabase;
+    //use RefreshDatabase;
 
     protected $puzzleService;
     protected $puzzleRepository;
